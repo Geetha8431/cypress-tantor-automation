@@ -1,0 +1,14 @@
+{
+    "URL": "https://darch-test.tantor.io/",
+    "Username": "Fed_user2",
+    "Password": "Fed@1234",
+    
+    "srcConnectionName": "Both_Oracle_103",
+    "srcSchemaName": "cdcuser",
+    
+    "SourcetableNames": "AUTO_SALES_DATA_ORA,GEETHA_SRC,ORACLE_SIMPLE1",
+    "TargetTableNames" : "public.GEETHA_SRC_target1,public.AUTO_SALES_DATA_ORA_GV,public.ORACLE_SIMPLE1_GV",
+
+    "tarConnectionName": "Both_Postgres_158",
+    "tarSchemaName": "public"
+  }

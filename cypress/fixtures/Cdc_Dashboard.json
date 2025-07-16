@@ -1,0 +1,11 @@
+{
+"URL": "https://darch-dev.tantor.io/",
+"Username": "Geetha",
+"Password": "1234",
+
+"dropdownOptions": ["Weekly", "Monthly", "Yearly"],
+"threeLinesButtonIndex": 5,
+"threeLinesRefreshIndex": 6,
+"refreshButtonIndex": 6,
+"expectedDetailsCount": 5
+}
