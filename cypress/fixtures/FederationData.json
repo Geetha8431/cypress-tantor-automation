@@ -1,0 +1,27 @@
+{
+    "URL": "https://darch-test.tantor.io/",
+    "Username": "Fed_user2",
+    "Password": "Fed@1234",
+
+    "Username1": "Admin",
+    "Password1": "admin",
+
+    "Project" : "Transformation",
+
+    "srcConnectionName": "Both_Oracle_103",
+    "srcSchemaName": "cdcuser",
+    "srcTableName": "GEETHA_SRC_21GV2",
+
+    "tarTableName" : "GEETHA_SRC_21GV2_tar30",
+    "tarConnectionName": "Both_Postgres_158",
+    "tarSchemaName": "public",
+
+    "InsertRecord": "(id, customer_name, gross_amt) VALUES (3, 'Geetha', 55.75)",
+    "UpdateRecord": "customer_name = 'Priya' WHERE id = 2",
+    "DeleteRecord": "id = 1",
+    "AddNewColumn": "City varchar(50)",
+    "InsertRecordintoColumn": "(id, customer_name, gross_amt, city) VALUES (4, 'Latha', 20.34, 'Shivamogga')"
+
+  }
+
+

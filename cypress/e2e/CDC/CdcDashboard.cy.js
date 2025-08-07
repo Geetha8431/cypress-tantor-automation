@@ -14,22 +14,36 @@ describe('CDC Page Validation - Tantor', () => {
     const url = Cypress.env('URL');
     const username = Cypress.env('Username');
     const password = Cypress.env('Password');
+    const project = Cypress.env('Project');
     const threeLinesButtonIndex = Cypress.env('threeLinesButtonIndex');
     const threeLinesRefreshIndex = Cypress.env('threeLinesRefreshIndex') || 6; // Default to 6 if not set
     const refreshButtonIndex = Cypress.env('refreshButtonIndex');
     const dropdownOptions = Cypress.env('dropdownOptions');
     const expectedDetailsCount = Cypress.env('expectedDetailsCount');
+
+
     // Go to the application directly (assume no SSL warning)
     cy.visit(url);
-    // Login
     cy.get('#username').type(username);
     cy.get('#password').type(password);
     cy.get('#remember-me').check();
     cy.get('button[type="submit"]').click();
+
+
     //Zoom out
     cy.document().then(doc => {
       doc.body.style.zoom = '80%';
     });
+
+    //------------------------------ Navigate to Connections --------------------------------
+// Click "Connections"
+cy.contains('span', 'Connections').should('be.visible').parent('a').click();
+cy.wait(2000);
+// Select "Transformation"
+cy.get('select.w-44').should('be.visible').select(project);
+cy.wait(2000);
+
+
     // Go to CDC page
     cy.get('a[href="/cdc"]', { timeout: 10000 }).should('be.visible').click();
     cy.screenshot('CDC_Dashboard_Page');

@@ -1,6 +1,6 @@
 describe('Login to Tantor', () => {
   before(() => {
-    cy.fixture('config').then(function (config) {
+    cy.fixture('Login').then(function (config) {
       this.config = config;
     });
   });

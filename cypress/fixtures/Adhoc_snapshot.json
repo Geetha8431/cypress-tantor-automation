@@ -4,13 +4,19 @@
     "Password": "Fed@1234",
 
     "Project" : "Transformation",
-    
+
     "srcConnectionName": "Both_Oracle_103",
     "srcSchemaName": "cdcuser",
-    
-    "SourcetableNames": "CUSTOMER_DATA_MULTI,CUSTOMER_DATA_MULTI1",
-    "TargetTableNames" : "public.CUSTOMER_DATA_MULTI_tar,public.CUSTOMER_DATA_MULTI1_tar",
+    "srcTableName": "GEETHA_SRC_07AUG",
 
     "tarConnectionName": "Both_Postgres_158",
-    "tarSchemaName": "public"
+    "tarSchemaName": "public",
+    "tarTableName" : "geetha_tar_07aug",
+
+    "InsertRecord": "(id, customer_name, gross_amt) VALUES (6, 'Jonh', 55.75)",
+
+    "insertedrecordid" : "6"
+
   }
+
+

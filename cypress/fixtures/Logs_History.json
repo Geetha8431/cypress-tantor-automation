@@ -1,0 +1,21 @@
+{
+  "URL": "https://darch-test.tantor.io/",
+  "Username": "Fed_user2",
+  "Password": "Fed@1234",
+
+  "Project" : "Transformation",
+
+  "_custom1" : "[All Connectors, Source, Target]",
+  "Connector_Type" : "All Connectors",
+
+  "_custom2" : "[All Levels, INFO, WARNING, ERROR]",
+  "Log_Level" : "All Levels",
+
+  "_custome3" : "[Last 15 minutes, Last hour, Last 6 hours, Last 24 hours, Last 7 days, Custom range]",
+  "Time_Range" : "Custom range",
+
+  "Start_Date": "2025-08-03",
+  "End_Date": "2025-08-05",
+
+  "Search_input" : "Acquisition"
+}

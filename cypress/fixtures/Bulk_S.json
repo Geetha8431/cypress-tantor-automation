@@ -3,14 +3,14 @@
   "Username": "Fed_user2",
   "Password": "Fed@1234",
 
-  "ProjectName" : "Transformation",
+  "Project" : "Transformation",
   
   "srcConnectionName": "Both_Oracle_103",
   "srcSchemaName": "cdcuser",
 
-  "SourcetableName": "AUTO_SALES_DATA_ORA",
-  "TargetTableName" : "public.AUTO_SALES_DATA_ORA_GV",
-
+  "SourcetableName": "CUSTOMER_DATA_SINGLE",
+  "TargetTableName" : "public.CUSTOMER_DATA_SINGLE_tar",
+  
   "tarConnectionName": "Both_Postgres_158",
   "tarSchemaName": "public"
 }

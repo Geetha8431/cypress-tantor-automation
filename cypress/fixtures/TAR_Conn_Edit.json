@@ -1,0 +1,19 @@
+{
+  "URL": "https://darch-test.tantor.io/",
+  "Username": "Fed_user2",
+  "Password": "Fed@1234",
+
+  "Project" : "Transformation",
+
+  "invalidConfig": {
+    "DBURL": "jdbc:postgresql://192.168.3.233:5432/postgres",
+    "user": "postgres",
+    "pass": "Admin@123"
+  },
+
+  "validConfig": {
+    "DBURL": "jdbc:postgresql://141.147.182.158:5432/postgres",
+    "user": "postgres",
+    "pass": "Translab123"
+  }
+}

@@ -17,3 +17,12 @@
 import './commands'
 
 import 'cypress-mochawesome-reporter/register';
+
+require('cypress-xpath');
+
+Cypress.on('uncaught:exception', (err, runnable) => {
+  // Suppress known Ace Editor load error
+  if (err.message.includes("Unexpected token '<") || err.message.includes("couldn't load module ace/theme/background")) {
+    return false; // prevent Cypress from failing the test
+  }
+});

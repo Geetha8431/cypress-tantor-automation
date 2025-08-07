@@ -3,6 +3,8 @@
 "Username": "Geetha",
 "Password": "1234",
 
+"Project" : "Transformation",
+
 "dropdownOptions": ["Weekly", "Monthly", "Yearly"],
 "threeLinesButtonIndex": 5,
 "threeLinesRefreshIndex": 6,

@@ -6,6 +6,7 @@ describe('Create New CDC Job Configuration in Tantor', () => {
         Cypress.env('url', config.URL);
         Cypress.env('username', config.Username);
         Cypress.env('password', config.Password);
+        Cypress.env('project', config.Project);
         Cypress.env('srcConnectionName', config.srcConnectionName);
         Cypress.env('srcSchemaName', config.srcSchemaName);
         Cypress.env('stableNames', config.SourcetableNames.split(',').map(name => name.trim()));
@@ -20,6 +21,7 @@ describe('Create New CDC Job Configuration in Tantor', () => {
     const url = Cypress.env('url');
     const username = Cypress.env('username');
     const password = Cypress.env('password');
+    const project = Cypress.env('project');
     const stableNames = Cypress.env('stableNames');
     const ttableNames = Cypress.env('ttableNames');
     const tarConnectionName = Cypress.env('tarConnectionName');
@@ -37,17 +39,13 @@ describe('Create New CDC Job Configuration in Tantor', () => {
       cy.contains('a', 'Connections').should('be.visible').click({ force: true });
       cy.wait(2000);
   
-      // Select Transformation
-      cy.get('select.w-44').should('be.visible').then(($select) => {
-        const options = [...$select[0].options].map(o => o.textContent.trim());
-        const transformationOption = options.find(opt => opt.includes('Transformation'));
-        if (transformationOption) {
-          cy.get('select.w-44').select(transformationOption);
-        } else {
-          cy.get('select.w-44').select(0);
-        }
-      });
-      cy.wait(1000);
+//------------------------------ Navigate to Connections --------------------------------
+// Click "Connections"
+cy.contains('span', 'Connections').should('be.visible').parent('a').click();
+cy.wait(2000);
+// Select "Transformation"
+cy.get('select.w-44').should('be.visible').select(project);
+cy.wait(2000);
   
       // Start CDC flow
       cy.contains('a', 'CDC').click();
