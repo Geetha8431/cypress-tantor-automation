@@ -7,9 +7,9 @@
     
     "srcConnectionName": "Both_Oracle_103",
     "srcSchemaName": "cdcuser",
-    "SourcetableNames": "GEETHA_SRC_08AUG_5,GEETHA_SRC_08AUG_6",
+    "SourcetableNames": "GEETHA_SRC_08AUG_3,GEETHA_SRC_08AUG_4",
 
     "tarConnectionName": "Both_Postgres_158",
     "tarSchemaName": "public",
-    "TargetTableNames" : "public.GEETHA_SRC_08AUG_5_tar,public.GEETHA_SRC_08AUG_6_tar"
+    "TargetTableNames" : "public.GEETHA_SRC_08AUG_3_13,public.GEETHA_SRC_08AUG_4_13"
   }

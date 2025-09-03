@@ -60,6 +60,7 @@ cy.screenshot('select-src-before-insert');
 runQuery(`INSERT INTO ${srcConnectionName}.${srcSchemaName}.${srcTableName} ${InsertRecord}`);
 cy.screenshot('insert-into-src');
 
+cy.wait(30000);
 
 // ---------------------------------- SELECT TAR Execution ----------------------------------------
 runQuery(`SELECT * FROM ${tarConnectionName}.${tarSchemaName}.${tarTableName}`);
@@ -71,14 +72,13 @@ cy.screenshot('select-tar-after-insert');
 cy.xpath("//a[@href='/cdc']").should('be.visible').click();
 cy.wait(2000);
 // Click the first 3 lines button
-cy.xpath("(//button[@type = 'button'])[1]").should('be.visible').click();
+cy.xpath("(//button[@type = 'button'])[2]").should('be.visible').click();
 cy.wait(2000);
 // Click on the 3-dot menu in the first row (9th column)
 cy.xpath("//table//tbody/tr[1]/td[9]").click();
 // Click on the "View" button inside the dropdown or menu
 cy.xpath("//button[@aria-label='View']").click();
 
-/*
 
 //----------------------------------- Adhoc Snapshot -----------------------------------------------
 cy.xpath("//Button[text() = 'Adhoc Snapshot']").should('be.visible').click();
@@ -95,12 +95,13 @@ cy.xpath("//div[contains(text(), 'Editor')]").should('be.visible').click();
 runQuery(`SELECT * FROM ${srcConnectionName}.${srcSchemaName}.${srcTableName}`);
 cy.screenshot('select-src-after-clicking-adhoc-snapshot');
 
+cy.wait(10000);
 
 // ---------------------------------- SELECT TAR Execution ------------------------------------------
 runQuery(`SELECT * FROM ${tarConnectionName}.${tarSchemaName}.${tarTableName}`);
 cy.screenshot('select-tar-after-clicking-adhoc-snapshot'); 
 
-*/
+
 
  });
 });

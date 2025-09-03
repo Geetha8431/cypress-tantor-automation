@@ -7,15 +7,15 @@
 
     "srcConnectionName": "Both_Oracle_103",
     "srcSchemaName": "cdcuser",
-    "srcTableName": "GEETHA_SRC_07AUG",
+    "srcTableName": "GEETHA_SRC_18AUG_3",
 
     "tarConnectionName": "Both_Postgres_158",
     "tarSchemaName": "public",
-    "tarTableName" : "geetha_tar_07aug",
+    "tarTableName" : "geetha_tar_18aug_3",
 
-    "InsertRecord": "(id, customer_name, gross_amt) VALUES (6, 'Jonh', 55.75)",
+    "InsertRecord": "(id, customer_name, gross_amt) VALUES (2, 'Bob', 55.75)",
 
-    "insertedrecordid" : "6"
+    "insertedrecordid" : "2"
 
   }
 

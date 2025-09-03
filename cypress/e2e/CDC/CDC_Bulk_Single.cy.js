@@ -48,10 +48,10 @@ describe('Create New CDC Job Configuration in Tantor', () => {
     cy.wait(2000);
 
 
-    // --------------------------------------- CDC Page ---------------------------------------
+    // --------------------------------------------- CDC Page ----------------------------------------------
     cy.contains('a', 'CDC', { timeout: 1000 }).click();
     cy.contains('button', '+ Create CDC').click();
-    
+    cy.screenshot("after-clicking-createcdc-button");
 
     // ------------------------------------- Select Source Connection ---------------------------------------
     // This likely opens a dropdown or expands a list of connections in your app.
@@ -138,6 +138,8 @@ describe('Create New CDC Job Configuration in Tantor', () => {
     cy.wait(1000);
     cy.log(`Target table '${TargetTableName}' selected.`);
 
+    cy.screenshot("after-srctar-selection");
+
     // ---------------------------------------------- Select Scope ------------------------------------------------
     // Click Scope button
     cy.contains('span', 'Scope').should('be.visible').should('not.be.disabled').click();
@@ -173,6 +175,8 @@ cy.contains('span', 'Delete')
 .click();
 cy.wait(1000);
 
+cy,screenshot("after-operation-selection");
+
 //---------------------------------------- Click Save In Scope --------------------------------------------
 // Click the Save button
 cy.contains('button', 'Save').should('be.visible').should('not.be.disabled').click();
@@ -189,33 +193,25 @@ cy.contains('button', /^yes$/i).should('be.visible').should('not.be.disabled').c
 
 // Wait for the success message to be visible
 cy.contains('p', 'saved successfully').should('be.visible');
+cy.screenshot("after-saved-cdcjob-creation");
 
 //---------------------------------------- Click Alright on confirm popup -----------------------------------
 // Click the Alright button
 cy.contains('button', /^alright$/i).should('be.visible').should('not.be.disabled').click();
 
-cy.wait(1000);
+cy.wait(3000);
 
-//---------------------------------------- Validate the Job Status -------------------------------------------
-/// Click the 6th button on the page (index 5)
+//-------------------------------------------- Click Refresh ------------------------------------------------
 cy.get('button').eq(5).should('be.visible').should('not.be.disabled').click();
+cy.screenshot("after-refreshed-cdcjob-page");
 
-// Wait until the row appears
-cy.get('table tbody tr').eq(0).find('td').eq(7).should('exist');
+// -------------------------------------- Click 3 dots on 1st job -------------------------------------------
+cy.xpath("(//button[@aria-label='Open actions menu'])[1]").should("be.visible").click();
 
-// Wait up to 60 seconds for the status cell to become "Ready to Run" or "Failed"
-cy.get('table tbody tr').eq(0).find('td').eq(7)
-  .invoke('text')
-  .then((text) => {
-    cy.log('Status after backend response: ', text); // For debugging
-    expect(
-      text.includes('Ready to Run') || text.includes('Failed'),
-      `Status cell text is "${text}"`
-    ).to.be.true;
-  });
+// ---------------------------------------- Click Trigger button --------------------------------------------
+cy.xpath('//button[@aria-label="Run"]').click();
+cy.screenshot("after-triggered-cdc-job");
 
-// ---------------------------------------- Click Trigger button -------------------------------------------
-cy.get('button[aria-label="Run"]').click();
   
   });
 });

@@ -8,8 +8,8 @@
   "srcConnectionName": "Both_Oracle_103",
   "srcSchemaName": "cdcuser",
 
-  "SourcetableName": "CUSTOMER_DATA_SINGLE",
-  "TargetTableName" : "public.CUSTOMER_DATA_SINGLE_tar",
+  "SourcetableName": "GEETHA_SRC_08AUG_2",
+  "TargetTableName" : "public.GEETHA_SRC_08AUG_2_tar",
   
   "tarConnectionName": "Both_Postgres_158",
   "tarSchemaName": "public"
