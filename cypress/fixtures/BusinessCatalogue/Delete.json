@@ -1,0 +1,13 @@
+{
+    "Role": "dataSteward",
+    "Searchvalue": "search",
+
+
+    "domain": {
+    "name": "recreate",
+    "description": "demo",
+    "owner": "dataowner",
+    "status": "Active",
+    "stakeholder": "databot1"
+  }
+}

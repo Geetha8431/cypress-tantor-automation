@@ -1,0 +1,29 @@
+{
+
+    "Role1": "CDCUser",
+    "Role2" : "adminUser",
+    "Project": "Combodia",
+
+    "Username": "Fed_user2",
+    "Password": "Fed@1234",
+
+    "Username1": "Admin",
+    "Password1": "admin",
+
+    "srcConnectionName": "Postgres_Both_ctesting",
+    "srcSchemaName": "ctesting",
+    "srcTableName": "orders_src_tbl_01dec_3",
+
+    "tarConnectionName": "Postgres_both",
+    "tarSchemaName": "public",
+    "tarTableName" : "orders_src_tbl_01dec_3_target",    
+
+    "InsertRecord": "(customer_id, order_date, amount, status) VALUES (104, '2025-01-15', 250.75, 'Pending')",
+    "UpdateRecord": " status = 'Completed' WHERE order_id = 2 ",
+    "DeleteRecord": "id = 51",
+    "AddNewColumn": "Region varchar(50)",
+    "InsertRecordintoColumn": "(customer_id, order_date, amount, status) VALUES (11, '2025-11-28', 55.75, 'Proceesing', 'North')"
+
+  }
+
+

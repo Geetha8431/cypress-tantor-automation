@@ -1,0 +1,20 @@
+{
+  "Role" : "CDCUser",
+
+  "Project" : "Combodia",
+
+  "invalidConfig": {
+    "host": "192.168.3.177",
+    "port": "1521",
+    "user": "dev_test",
+    "pass": "Dev_test",
+    "dbname": "oradev"
+  },
+  "validConfig": {
+    "host": "132.145.120.103",
+    "port": "1521",
+    "user": "cdcuser",
+    "pass": "cdcuser",
+    "dbname": "TESTDB"
+  }
+}

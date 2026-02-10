@@ -1,0 +1,95 @@
+{
+  "Role": "dataSteward",
+  "searchValue": "Only_Domain",
+  "domain": {
+    "description": "",
+    "owner": "",
+    "status": "",
+    "stakeholders": []
+  },
+  "categories": [
+    {
+      "currentName": "",
+      "name": "New Category ABC",
+      "description": "My new category description",
+      "owner": "dataowner",
+      "status": "Active"
+    },
+    {
+      "currentName": "",
+      "name": "",
+      "description": "",
+      "owner": "",
+      "status": ""
+    }
+  ],
+  "SubCategories": [
+    {
+      "currentName": "",
+      "parentCategory": "",
+      "name": "",
+      "desc": "",
+      "owner": "",
+      "status": ""
+    },
+    {
+      "currentName": "",
+      "parentCategory": "",
+      "name": "",
+      "desc": "",
+      "owner": "",
+      "status": ""
+    }
+  ],
+  "terms": [
+    {
+      "currentName": "",
+      "name": "",
+      "description": "",
+      "owner": "",
+      "status": ""
+    }
+  ],
+  "tags": [
+    {
+      "currentName": "",
+      "name": "Tag1",
+      "description": "hhjjg",
+      "owner": "dataowner",
+      "status": "Active"
+    },
+    {
+      "currentName": "",
+      "name": "New_tag",
+      "description": "test",
+      "owner": "dataowner",
+      "status": "Active"
+    }
+  ],
+  "SubTags": [
+    {
+      "currentName": "",
+      "parentTag": "New_tag",
+      "name": "New_sub-tag",
+      "description": "Updated sub-tag description",
+      "owner": "dataowner",
+      "status": "Active"
+    },
+    {
+      "currentName": "",
+      "parentTag": "",
+      "name": "",
+      "description": "",
+      "owner": "",
+      "status": ""
+    },
+    {
+      "currentName": "",
+      "parentTag": "",
+      "name": "",
+      "description": "",
+      "owner": "",
+      "status": ""
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "Role" : "CDCUser",
+
+  "Project" : "Combodia",
+
+  "invalidConfig": {
+    "DBURL": "jdbc:postgresql://192.168.3.233:5432/postgres",
+    "user": "postgres",
+    "pass": "Admin@123"
+  },
+
+  "validConfig": {
+    "DBURL": "jdbc:postgresql://141.147.182.158:5432/postgres",
+    "user": "postgres",
+    "pass": "Translab123"
+  }
+}

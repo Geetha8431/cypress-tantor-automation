@@ -1,0 +1,15 @@
+{
+  "Role": "dataSteward",
+  "Searchvalue": "New Category ABC",
+  "SearchTerms": [
+    "cat1",
+    "sub-catagory",
+    "Awaiting Approval",
+    "active",
+    "Inactive",
+    "SubTag"
+  ],
+  "CharByCharSearch": "bus",
+
+ "columnToSort": "domain"
+}

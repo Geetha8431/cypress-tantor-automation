@@ -1,0 +1,15 @@
+{
+  "Role": "dataOwner",
+
+  "Searchvalue": "string_value",
+
+  "NewDomain": "Only_Domain",
+  "Category": "New Category ABC",
+  "SubCategory": "",
+  "Tag": "Non-Sensitive Tags",
+  "SubTag": "",
+
+  "Role1" : "dataSteward",
+  "ApproveOrReject" : "Rejected",
+  "RejectionReason" : "Automated rejection via Cypress"
+}

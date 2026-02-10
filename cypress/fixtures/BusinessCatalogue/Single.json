@@ -1,0 +1,67 @@
+{
+   "Role": "dataSteward",
+
+  "domains": [
+    {
+      "name": "Only_Domain",
+      "description": "demo1",
+      "owner": "dataowner",
+      "status": "Active",
+      "stakeholder": "databot1"
+    },
+    {
+      "name": "Single_Catalogue_Assets",
+      "description": "demo 2",
+      "owner": "dataowner",
+      "status": "Active",
+      "stakeholder": "databot1"
+    }
+  ],
+
+  "categories": [
+    {
+      "name": "New_Cat",
+      "desc": "Category 1 description",
+      "owner": "dataowner",
+      "status": "Active"
+    }
+  ],
+
+    "SubCategories": [
+    {
+      "parentCategory": "New_Cat",
+      "name": "New_Sub-Cat",
+      "desc": "Sub-Category 1 description",
+      "owner": "dataowner",
+      "status": "Active"
+    }
+  ],
+
+    "terms": [
+    {
+      "name": "New_Term",
+      "desc": "First Term description",
+      "owner": "dataowner",
+      "status": "Active"
+    }
+  ],
+
+    "tags": [
+    {
+      "name": "New_Tag",
+      "desc": "Tag 1 description",
+      "owner": "dataowner",
+      "status": "Active"
+    }
+  ],
+
+  "SubTags": [
+    {
+      "parentTag": "New_Tag",
+      "name": "New_Sub-Tag",
+      "desc": "Sub-tag 1 description",
+      "owner": "dataowner",
+      "status": "Active"
+    }
+  ]
+}

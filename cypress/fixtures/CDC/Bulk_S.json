@@ -1,0 +1,12 @@
+{
+  "Role": "CDCUser",
+  "Project": "GDI",
+
+  "srcConnectionName": "Mssql_27_Both",
+  "srcSchemaName": "dbo",
+  "SourcetableName": "MSSQL_PK_tbl",
+
+  "tarConnectionName": "Mssql_27_Both",
+  "tarSchemaName": "dbo",
+  "TargetTableName": "dbo.MSSQL_PK_tbl_tar"
+}

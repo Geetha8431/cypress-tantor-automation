@@ -1,0 +1,12 @@
+{
+    "Role": "adminUser",
+    
+    "ReportName" : "Dec08_report1",
+    "StartDate": "",
+    "EndDate" : "",
+    "Users" : ["", ""],
+    "ResourceTypes" : ["",""],
+    "OperationTypes" : ["",""]
+
+
+}

@@ -1,0 +1,6 @@
+{
+  "Role": "regularUser",
+  "Searchvalue": "Postgres_both",
+  "New_DB_Description" : "Database Description1",
+  "New_Schema_Description" : "Schema Description1"
+}

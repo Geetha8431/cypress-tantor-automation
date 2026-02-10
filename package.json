@@ -7,5 +7,8 @@
   },
   "scripts": {
     "cypress:open": "cypress open"
+  },
+  "dependencies": {
+    "otplib": "^12.0.1"
   }
 }

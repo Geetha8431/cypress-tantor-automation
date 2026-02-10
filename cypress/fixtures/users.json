@@ -1,0 +1,24 @@
+{
+  "URL": "https://darch-dev.tantor.io/",
+  "KEYCLOAK_URL": "https://keycloak.tantor.io",
+  "adminUser": {
+    "username": "admin",
+    "password": "admin"
+  },
+  "dataOwner": {
+    "username": "DataOwnerUser",
+    "password": "Dataowner@123"
+  },
+  "dataSteward": {
+    "username": "DataStewardUser",
+    "password": "Datasteward@123"
+  },
+  "regularUser": {
+    "username": "RegularUser",
+    "password": "Regular@123"
+  },
+  "CDCUser": {
+    "username": "Databot1",
+    "password": "Data@123"
+  }
+}

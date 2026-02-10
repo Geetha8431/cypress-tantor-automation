@@ -1,0 +1,23 @@
+{
+  "Role" : "CDCUser",
+  "Project": "GDI",
+
+  "Searchvalue": "sales",
+  "CharByCharSearch": "order",  
+
+  "Table_Header" : "Name",
+  "Table_Header_Index" : "1",
+
+  "dropdownOptions": [
+    "Weekly",
+    "Monthly",
+    "Yearly"
+  ],
+  "threeLinesButtonIndex": 5,
+  "threeLinesRefreshIndex": 6,
+  "refreshButtonIndex": 6,
+  "expectedDetailsCount": 5
+
+
+
+}

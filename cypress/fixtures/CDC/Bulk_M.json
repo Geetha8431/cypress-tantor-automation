@@ -1,0 +1,12 @@
+{
+  "Role": "CDCUser",
+  "Project": "Combodia",
+
+  "SrcConnectionName": "Postgres_Both_ctesting",
+  "SrcSchemaName": "ctesting",
+  "SourcetableNames": ["orders_src_tbl", "orders_src_tbl_28"],
+  
+  "TarConnectionName": "Postgres_Both_ctesting",
+  "TarSchemaName": "ctesting",
+  "TargetTableNames": ["ctesting.orders_src_tbl_tar","ctesting.orders_src_tbl_28_tar"]
+}

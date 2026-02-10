@@ -1,0 +1,90 @@
+{
+  "Role": "dataSteward",
+
+  "domain": {
+    "name": "Multple_Catalogue_Assets",
+    "description": "demo",
+    "owner": "dataowner",
+    "status": "Active",
+    "stakeholder": "databot1"
+  },
+
+  "categories": [
+    {
+      "name": "C1",
+      "desc": "Category 1 description",
+      "owner": "dataowner",
+      "status": "Active"
+    },
+    {
+      "name": "C2",
+      "desc": "Category 2 description",
+      "owner": "dataowner",
+      "status": "Active"
+    }
+  ],
+
+    "SubCategories": [
+    {
+      "parentCategory": "C1",
+      "name": "Sub-cat1",
+      "desc": "Sub-Category 1 description",
+      "owner": "dataowner",
+      "status": "Active"
+    },
+    {
+      "parentCategory": "C2",
+      "name": "Sub-cat2",
+      "desc": "SUb-Category 2 description",
+      "owner": "dataowner",
+      "status": "Active"
+    }
+  ],
+
+    "terms": [
+    {
+      "name": "Term1",
+      "desc": "First Term description",
+      "owner": "dataowner",
+      "status": "Active"
+    },
+    {
+      "name": "Term2",
+      "desc": "Second Term description",
+      "owner": "dataowner",
+      "status": "Active"
+    }
+  ],
+
+    "tags": [
+    {
+      "name": "Tag1",
+      "desc": "Tag 1 description",
+      "owner": "dataowner",
+      "status": "Active"
+    },
+    {
+      "name": "Tag2",
+      "desc": "Tag 2 description",
+      "owner": "dataowner",
+      "status": "Active"
+    }
+  ],
+
+  "SubTags": [
+    {
+      "parentTag": "Tag1",
+      "name": "Sub-tag1",
+      "desc": "Sub-tag 1 description",
+      "owner": "dataowner",
+      "status": "Active"
+    },
+    {
+      "parentTag": "Tag2",
+      "name": "Sub-tag2",
+      "desc": "Sub-tag 2 description",
+      "owner": "dataowner",
+      "status": "Active"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Role": "dataSteward",
+  "Searchvalue": "Multple_Catalogue_Assets",
+  "SearchTerms": [
+    "DataOwner_domain",
+    "Cat1_gv1",
+    "hhh",
+    "Active",
+    "Deprecated"
+  ],
+  "CharByCharSearch": "dom",
+  "FinalSpecificSearch": "N/A",
+  "linkCount": "5"
+}
