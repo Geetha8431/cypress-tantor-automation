@@ -1,10 +1,17 @@
 # Cypress artifacts
 node_modules/
+
 cypress/downloads/
 cypress/screenshots/
 cypress/reports/
 cypress/videos/
-cypress\reports
-cypress\runs
-cypress\security
-cypress\e2e\Tantor-Cypres.code-workspace
+cypress/runs/
+cypress/security/
+cypress/scripts/
+
+cypress/e2e/Tantor-Cypres.code-workspace
+
+
+cypress/e2e/1-getting-started
+cypress/e2e/2-advanced-examples
+cypress/e2e/NewFile.cy.js
