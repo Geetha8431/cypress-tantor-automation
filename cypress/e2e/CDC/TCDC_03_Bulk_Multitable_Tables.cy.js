@@ -1,5 +1,10 @@
 /// <reference types="cypress" />
 
+
+import addContext from "mochawesome/addContext";
+import vulnerabilities from "../security/vulnerabilities.json";
+
+
 describe('Create New CDC pipeline using Bulk options for Multiple Tables', () => {
   let userData;
 

@@ -1,6 +1,6 @@
 {
   "Role" : "CDCUser",
-  "Project": "GDI",
+  "Project": "Default",
 
   "Searchvalue": "sales",
   "CharByCharSearch": "order",  

@@ -20,9 +20,21 @@ import 'cypress-mochawesome-reporter/register';
 
 require('cypress-xpath');
 
-Cypress.on('uncaught:exception', (err, runnable) => {
-  // Suppress known Ace Editor load error
-  if (err.message.includes("Unexpected token '<") || err.message.includes("couldn't load module ace/theme/background")) {
+afterEach(function () {
+  if (this.currentTest.state === "passed") {
+    const fileName = this.currentTest.title.replace(/[^a-z0-9]/gi, "_");
+    cy.screenshot(`PASSED_${fileName}`);
+  }
+});
+
+
+Cypress.on("uncaught:exception", (err) => {
+  if (
+    err.message.includes("expected expression, got '<'") ||
+    err.message.includes("ace/theme") ||
+    err.message.includes("couldn't load module")
+  ) {
     return false; // prevent Cypress from failing the test
   }
 });
+

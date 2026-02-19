@@ -1,7 +1,10 @@
+# Cypress artifacts
 node_modules/
 cypress/downloads/
 cypress/screenshots/
 cypress/reports/
 cypress/videos/
-
-
+cypress\reports
+cypress\runs
+cypress\security
+cypress\e2e\Tantor-Cypres.code-workspace

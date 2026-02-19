@@ -16,7 +16,7 @@ describe('CDC Page Validation - Tantor -> CDC_01', () => {
 
     cy.xpath("//a[@href='/cdc']").should('be.visible').click();
     cy.url().should("include", "/cdc");
-    cy.get('nav[aria-label="Breadcrumb"]', { timeout: 10000 }).should('contain.text', 'Platform').and('contain.text', 'CDC');
+    cy.get('nav[aria-label="breadcrumb"]', { timeout: 10000 }).should('contain.text', 'Platform').and('contain.text', 'Cdc');
 
     cy.xpath("//h1[@class='text-2xl font-semibold']").should("be.visible");
     //cy.screenshot('CDC_Dashboard_Page');
@@ -37,7 +37,7 @@ describe('CDC Page Validation - Tantor -> CDC_01', () => {
     cy.get('button:has(svg.lucide-refresh-ccw)').should('be.visible');
 
     // 4. + Create CDC button (fourth button)
-    cy.xpath("//button[text() = '+ Create CDC']").should("be.visible");
+    cy.xpath("//button[.//span[normalize-space()='Create CDC']]").should("be.visible");
 
     // 5.
     cy.xpath("//h2[text() = 'CDC Overview']").should("be.visible");

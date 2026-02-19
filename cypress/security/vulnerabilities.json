@@ -1,0 +1,24 @@
+[
+  {
+    "id": "VULN-001",
+    "category": "SQL Injection",
+    "severity": "High",
+    "file": "loginController.js",
+    "line": 42,
+    "description": "SQL Injection possible via login form",
+    "tool": "SonarQube",
+    "remediationTimeline": "7 days",
+    "status": "Open"
+  },
+  {
+    "id": "VULN-002",
+    "category": "XSS",
+    "severity": "Medium",
+    "file": "profile.html",
+    "line": 18,
+    "description": "Reflected XSS vulnerability",
+    "tool": "OWASP ZAP",
+    "remediationTimeline": "30 days",
+    "status": "Open"
+  }
+]
